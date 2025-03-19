@@ -1,8 +1,9 @@
+import SectionContainer from '@/shared/ui/SectionContainer'
 import SectionHeader from '@/shared/ui/SectionHeader'
 
 export default function AboutSection() {
   return (
-    <div className="px-8 py-6">
+    <SectionContainer>
       <SectionHeader>// ABOUT ME</SectionHeader>
       <div className="py-6">
         <p className="text-2xl">
@@ -13,6 +14,6 @@ export default function AboutSection() {
           delivering on promises and continuously pioneering innovation.
         </p>
       </div>
-    </div>
+    </SectionContainer>
   )
 }
