@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   keywords: ['Frontend', 'Developer', 'React', 'Next.js', 'TypeScript', 'Portfolio'],
   authors: [{ name: 'Kwak Seong Jae' }],
   creator: 'Kwak Seong Jae',
+  icons: {
+    icon: '/assets/image/favicon.ico',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
