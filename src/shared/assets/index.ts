@@ -7,3 +7,6 @@ export { default as ProjectIcon } from '/public/assets/svg/folder-icon.svg'
 export { default as PostIcon } from '/public/assets/svg/blog-icon.svg'
 export { default as MailIcon } from '/public/assets/svg/mail-icon.svg'
 export { default as LocationIcon } from '/public/assets/svg/location-icon.svg'
+
+// Lottie 파일 임포트
+export { default as CursorLottie } from '/public/assets/lottie/cursor-lottie.json'
