@@ -5,7 +5,7 @@ export default function AboutSection() {
   return (
     <SectionContainer>
       <SectionHeader>// ABOUT ME</SectionHeader>
-
+      {/* Introduction */}
       <p className="text-2xl">
         Empowering success in the digital landscape.
         <br />
