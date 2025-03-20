@@ -5,15 +5,14 @@ export default function AboutSection() {
   return (
     <SectionContainer>
       <SectionHeader>// ABOUT ME</SectionHeader>
-      <div className="py-6">
-        <p className="text-2xl">
-          Empowering success in the digital landscape.
-          <br />
-          Together, we shape a visionary future,
-          <br />
-          delivering on promises and continuously pioneering innovation.
-        </p>
-      </div>
+
+      <p className="text-2xl">
+        Empowering success in the digital landscape.
+        <br />
+        Together, we shape a visionary future,
+        <br />
+        delivering on promises and continuously pioneering innovation.
+      </p>
     </SectionContainer>
   )
 }
