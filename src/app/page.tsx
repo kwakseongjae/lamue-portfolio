@@ -1,6 +1,7 @@
 import HeroSection from '@/widgets/home/ui/HeroSection'
 import AboutSection from '@/widgets/home/ui/AboutSection'
 import SkillsSection from '@/widgets/home/ui/SkillsSection'
+import ExperienceSection from '@/widgets/home/ui/ExperienceSection'
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <SkillsSection />
+      <ExperienceSection />
     </div>
   )
 }
