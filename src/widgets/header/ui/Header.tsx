@@ -17,7 +17,7 @@ export const Header = () => {
         </div>
       </Link>
 
-      <nav className="flex gap-4 font-semibold border border-slate-800 rounded-3xl px-3 py-2">
+      <nav className="hidden md:flex gap-4 font-semibold border border-slate-800 rounded-3xl px-3 py-2">
         <Link href="/" aria-label="Go to home page">
           <div
             className={`flex items-center gap-1 cursor-pointer ${pathname === '/' ? 'text-white' : 'text-slate-400'}`}
@@ -54,7 +54,7 @@ export const Header = () => {
 
       <a
         href="mailto:gkffhdnls13@gmail.com"
-        className="px-4 py-2 bg-primary rounded-3xl font-semibold"
+        className="hidden md:block px-4 py-2 bg-primary rounded-3xl font-semibold"
         aria-label="Contact me via email"
       >
         <div className="flex items-center gap-1 border border-slate-800 rounded-3xl px-4 py-2">
