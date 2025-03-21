@@ -1,3 +1,7 @@
 export default function PostsPage() {
-  return <h1 className="text-2xl font-bold mb-8">Posts</h1>
+  return (
+    <div className="flex justify-center items-center pt-16">
+      <p className="text-xl font-semibold">No Content</p>
+    </div>
+  )
 }
