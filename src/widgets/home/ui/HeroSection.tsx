@@ -7,6 +7,9 @@ import Lottie from 'lottie-react'
 import { CursorLottie } from '@/shared/assets'
 import SectionContainer from '@/shared/ui/SectionContainer'
 
+const AuthorName = 'KWAK SEONG JAE'
+const AuthorLocation = 'SEOUL, KOREA'
+
 const HeroSection = () => {
   return (
     <SectionContainer>
@@ -31,7 +34,7 @@ const HeroSection = () => {
                   borderStyle: 'solid',
                 }}
               >
-                KWAK SEONG JAE
+                {AuthorName}
               </p>
               <Lottie
                 animationData={CursorLottie}
@@ -41,7 +44,7 @@ const HeroSection = () => {
             </div>
             <div className="flex space-x-2 items-center">
               <LocationIcon className="w-5 h-5" />
-              <p>SEOUL, KOREA</p>
+              <p>{AuthorLocation}</p>
             </div>
           </div>
         </div>
