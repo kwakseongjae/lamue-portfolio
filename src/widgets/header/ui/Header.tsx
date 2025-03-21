@@ -54,7 +54,7 @@ export const Header = () => {
 
       <a
         href="mailto:gkffhdnls13@gmail.com"
-        className="hidden md:block px-4 py-2 bg-primary rounded-3xl font-semibold"
+        className="px-4 py-2 bg-primary rounded-3xl font-semibold"
         aria-label="Contact me via email"
       >
         <div className="flex items-center gap-1 border border-slate-800 rounded-3xl px-4 py-2">
