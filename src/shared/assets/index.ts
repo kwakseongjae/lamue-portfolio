@@ -1,6 +1,6 @@
 // 이미지 파일 임포트
 export { default as ProfileImage } from '/public/assets/image/fubao.jpg'
-export { default as DummyHero } from '/public/assets/image/dummy-hero.jpg'
+export { default as DummyHero } from '/public/assets/image/dummy_hero.jpg'
 
 // SVG 파일 임포트
 export { default as HomeIcon } from '/public/assets/svg/home-icon.svg'
