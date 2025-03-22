@@ -15,8 +15,8 @@ export default function ScrollToTopButton() {
     >
       <ArrowIcon
         className="w-[24px] h-[24px]"
-        fill="1E1E1E"
-        stroke="1E1E1E"
+        fill="#1E1E1E"
+        stroke="#1E1E1E"
         aria-label="Scroll to top"
       />
     </button>
