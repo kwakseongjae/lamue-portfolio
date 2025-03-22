@@ -24,7 +24,7 @@ import SkillContainer from '@/shared/ui/SkillContainer'
 export default function SkillsSection() {
   return (
     <SectionContainer>
-      <SectionHeader>// SKILLS</SectionHeader>
+      <SectionHeader>{`// SKILLS`}</SectionHeader>
       <SkillContainer>
         {/* Mobile Skills */}
         <SkillBlock delay={1000} color="#3FB6D3" domain="Mobile">

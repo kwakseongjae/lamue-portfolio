@@ -27,7 +27,7 @@ const experience = [
 export default function ExperienceSection() {
   return (
     <SectionContainer>
-      <SectionHeader>// EXPERIENCE</SectionHeader>
+      <SectionHeader>{`// EXPERIENCE`}</SectionHeader>
       <ExperienceContainer>
         {experience.map((item, idx) => (
           <ExperienceBlock key={idx} {...item} />

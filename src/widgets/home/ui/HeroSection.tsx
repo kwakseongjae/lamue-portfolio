@@ -24,7 +24,7 @@ const HeroSection = () => {
           />
           <div className="flex flex-col gap-2">
             <div className="flex space-x-2 text-lg relative border border-slate-800 rounded-3xl px-4 pt-2 pb-1">
-              <p>HI, I'M</p>
+              <p>HI, I&apos;M</p>
               <p
                 className="border-b-2"
                 style={{

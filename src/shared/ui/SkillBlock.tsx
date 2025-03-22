@@ -54,7 +54,7 @@ export default function SkillBlock({ children, delay, color, domain }: SkillBloc
           showDomain ? 'opacity-100' : 'opacity-0'
         } ${domainColor[domain]}`}
       >
-        // {domain}
+        {`// ${domain}`}
       </span>
     </div>
   )
