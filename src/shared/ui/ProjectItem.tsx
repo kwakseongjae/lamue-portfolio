@@ -1,6 +1,9 @@
+'use client'
+
 import { ArrowIcon } from '@/shared/assets'
 import Image from 'next/image'
 import { StaticImageData } from 'next/image'
+import { useRouter } from 'next/navigation'
 
 interface ProjectItemProps {
   title: string
@@ -21,11 +24,27 @@ export default function ProjectItem({
   gradientVia,
   gradientTo,
 }: ProjectItemProps) {
+  const router = useRouter()
+
+  const handleNavigateToDetail = () => {
+    router.push(`/projects/${encodeURIComponent(title)}`)
+  }
+
   return (
-    <div className="relative w-full bg-[#191b19] rounded-2xl p-2 group cursor-pointer">
+    <div
+      className="relative w-full bg-[#191b19] rounded-2xl p-2 group cursor-pointer"
+      onClick={handleNavigateToDetail}
+      style={
+        {
+          '--gradient-from': gradientFrom,
+          '--gradient-via': gradientVia,
+          '--gradient-to': gradientTo,
+        } as React.CSSProperties
+      }
+    >
       <div className="absolute top-0 left-0 w-full h-[4px] bg-gradient-to-r from-transparent via-white/40 to-transparent blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       <div
-        className={`bg-gradient-to-b from-[#2f2f2f] to-[#191b19] group-hover:bg-gradient-to-b group-hover:from-[${gradientFrom}] group-hover:via-[${gradientVia}] group-hover:to-[${gradientTo}] px-6 pt-8 flex flex-col border border-[#6F6767] border-opacity-50 rounded-xl overflow-hidden transition-colors duration-300`}
+        className={`bg-gradient-to-b from-[#2f2f2f] to-[#191b19] group-hover:bg-radial-[at_50%_0%] group-hover:from-[var(--gradient-from)] group-hover:via-[var(--gradient-via)] group-hover:to-[var(--gradient-to)] px-6 pt-8 flex flex-col border border-[#6F6767] border-opacity-50 rounded-xl overflow-hidden transition-colors duration-300`}
       >
         <div className="flex flex-col gap-2">
           <div className="flex justify-between">
