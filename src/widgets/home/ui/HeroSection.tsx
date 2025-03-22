@@ -1,9 +1,10 @@
 'use client'
 
+import dynamic from 'next/dynamic'
+
 import { LocationIcon } from '@/shared/assets'
 import Image from 'next/image'
 import { ProfileImage } from '@/shared/assets'
-import Lottie from 'lottie-react'
 import { CursorLottie } from '@/shared/assets'
 import SectionContainer from '@/shared/ui/SectionContainer'
 
@@ -11,6 +12,8 @@ const AuthorName = 'KWAK SEONG JAE'
 const AuthorLocation = 'SEOUL, KOREA'
 
 const HeroSection = () => {
+  const Lottie = dynamic(() => import('lottie-react'), { ssr: false })
+
   return (
     <SectionContainer>
       <div className="w-full flex flex-col items-center py-6 gap-4">
