@@ -4,7 +4,9 @@ import { ArrowIcon } from '@/shared/assets'
 
 export default function ScrollToTopButton() {
   const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
   }
 
   return (
