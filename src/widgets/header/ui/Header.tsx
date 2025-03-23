@@ -1,7 +1,6 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import BackButton from '@/shared/ui/BackButton'
 import MainNavigation from '@/shared/ui/MainNavigation'
 
 export const Header = () => {
@@ -10,8 +9,12 @@ export const Header = () => {
   const isDetailPage = pathname.startsWith('/projects/') || pathname.startsWith('/posts/')
 
   return (
-    <header className="flex items-center justify-between px-8 py-4">
-      {isDetailPage ? <BackButton /> : <MainNavigation pathname={pathname} />}
-    </header>
+    <>
+      {!isDetailPage && (
+        <header className="flex items-center justify-between px-8 py-4 bg-bg-primary/80 backdrop-blur-sm">
+          <MainNavigation pathname={pathname} />
+        </header>
+      )}
+    </>
   )
 }
