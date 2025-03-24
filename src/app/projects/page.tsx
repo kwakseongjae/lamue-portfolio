@@ -14,7 +14,7 @@ const projects = [
     gradientTo: '#100E13',
   },
   {
-    title: 'INVY',
+    title: 'INVY1',
     date: '2024.09 - 2024.12',
     description: 'Invy is a platform that allows you to create and manage your inventory.',
     imageSrc: ProfileImage,
@@ -23,7 +23,7 @@ const projects = [
     gradientTo: '#100E13',
   },
   {
-    title: 'INVY',
+    title: 'INVY2',
     date: '2024.09 - 2024.12',
     description: 'Invy is a platform that allows you to create and manage your inventory.',
     imageSrc: ProfileImage,
