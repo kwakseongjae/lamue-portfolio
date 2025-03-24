@@ -26,6 +26,7 @@ export { default as TailwindCSSIcon } from '/public/assets/svg/skills/tailwind-c
 export { default as JavaIcon } from '/public/assets/svg/skills/java-icon.svg'
 export { default as SpringBootIcon } from '/public/assets/svg/skills/spring-boot-icon.svg'
 export { default as SpringSecurityIcon } from '/public/assets/svg/skills/spring-security-icon.svg'
+export { default as INVY } from '/public/assets/svg/INVY.svg'
 
 // Lottie 파일 임포트
 export { default as CursorLottie } from '/public/assets/lottie/cursor-lottie.json'
