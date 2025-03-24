@@ -56,11 +56,12 @@ export default function ProjectItem({
           </div>
           <p className="text-neutral-400">{description}</p>
         </div>
-        <div className="px-32 pt-16 transition-all duration-400 transform translate-y-4 group-hover:translate-y-0">
+        <div className="flex justify-center xl:pt-16 lg:pt-12 md:pt-8 pt-4 transition-all duration-400 transform translate-y-4 group-hover:translate-y-0">
           <Image
             src={imageSrc}
             alt={`Image of ${title} project`}
             aria-label={`Image of ${title} project`}
+            className="w-2/3"
           />
         </div>
       </div>
