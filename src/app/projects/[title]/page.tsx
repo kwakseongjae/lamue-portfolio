@@ -60,15 +60,19 @@ const ProjectDetail = () => {
 
   if (!project) {
     return (
-      <div className="w-full min-h-screen flex items-center justify-center">
-        <h1 className="text-3xl font-bold">Project Not Found</h1>
+      <div className="w-full min-h-screen flex flex-col px-8 py-6">
+        <BackButton className="inline-flex" />
+        <div className="flex flex-col items-center justify-center gap-4 pt-16">
+          <h1 className="text-3xl font-bold">Project Not Found</h1>
+          <p className="text-neutral-400">Please check the URL and try again.</p>
+        </div>
       </div>
     )
   }
 
   return (
     <div
-      className={`w-full min-h-screen px-8 py-4 transition-opacity duration-500 ${animateBackground ? 'opacity-100' : 'opacity-0'}`}
+      className={`w-full min-h-screen px-8 py-6 transition-opacity duration-500 ${animateBackground ? 'opacity-100' : 'opacity-0'}`}
       style={{
         background: animateBackground
           ? `radial-gradient(at 50% 0%, ${project.gradientFrom}, ${project.gradientVia}, ${project.gradientTo})`
@@ -76,7 +80,7 @@ const ProjectDetail = () => {
       }}
     >
       <BackButton />
-      <div className="px-64 py-16 flex flex-col gap-12">
+      <div className="w-2/3 mx-auto py-16 flex flex-col gap-12">
         <div className="flex items-center flex-col gap-12">
           <div className="flex flex-col items-center">
             {project.logo}
@@ -88,7 +92,7 @@ const ProjectDetail = () => {
             <Image src={project.thumbnail} alt="Project" width={1000} height={1000} />
           </div>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 px-2">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 px-2">
           {/* Left Column */}
           <div className="space-y-4">
             <div>
