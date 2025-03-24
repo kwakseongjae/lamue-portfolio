@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <>
       {!isDetailPage && (
-        <header className="flex items-center justify-between px-8 py-4 bg-bg-primary/80 backdrop-blur-sm">
+        <header className="flex items-center justify-between px-8 py-6 bg-bg-primary/80 backdrop-blur-sm">
           <MainNavigation pathname={pathname} />
         </header>
       )}
