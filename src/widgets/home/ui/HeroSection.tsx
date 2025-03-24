@@ -29,7 +29,7 @@ const HeroSection = () => {
             <div className="flex space-x-2 text-lg relative border border-slate-800 rounded-3xl px-4 pt-2 pb-1">
               <p>HI, I&apos;M</p>
               <p
-                className="border-b-2"
+                className="border-b-2 m-0"
                 style={{
                   borderImage:
                     'repeating-linear-gradient(to right, transparent 0%, transparent 2%, #E05634 2%, #E05634 6%) 1 0 100%',
